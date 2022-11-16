@@ -67,6 +67,17 @@ def add_pets_from_json(filename, cur, conn):
     json_data = json.loads(file_data)
 
     # THE REST IS UP TO YOU
+    pet_id = 0 
+    for dict in json_data:
+        name = dict["name"]
+        species = dict["species"]
+        age = dict["age"]
+        cuteness = dict["cuteness"]
+        aggressiveness = dict["aggressiveness"]
+        pet_id += 1
+
+        cur.execute["INSERT INTO Patients"]
+
     pass
 
 
